@@ -34,9 +34,4 @@
     "tether": "^1.4.7"
   }
 }
-{
-  "scripts": {
-    "asset": "build-asset \"src/public/**/*\" -i src/public -o dist -v 1.0.0 -n public",
-    "asset-watch": "build-asset \"src/public/**/*\" -i src/public -o dist -v 1.0.0 -n public -w",
-  }
-}
+
