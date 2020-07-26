@@ -16,10 +16,12 @@
   "author": "Aviv Sharon",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^4.0.0",
     "cssmin": "^0.4.3",
     "htmlmin": "0.0.7",
     "lite-server": "^2.2.2",
     "rimraf": "^3.0.2",
+    "style-loader": "^1.2.1",
     "uglifyjs": "^2.4.11",
     "usemin-cli": "^0.6.0"
   },
