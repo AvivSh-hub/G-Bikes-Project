@@ -10,7 +10,7 @@
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin assets/* -o dist/assets",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin gallery.html -d dist --htmlmin -o dist/gallery.html && usemin Products.html -d dist --htmlmin -o dist/Products.html && usemin BikesForKids.html -d dist --htmlmin -o dist/BikesForKids.html && usemin StuntBikes.html -d dist --htmlmin -o dist/StuntBikes.html && usemin MountainBikes.html -d dist --htmlmin -o dist/MountainBikes.html && usemin EBikes.html -d dist --htmlmin -o dist/EBikes.html && usemin About.html -d dist --htmlmin -o dist/About.html && usemin Contactus.html -d dist --htmlmin -o dist/Contactus.html && usemin Blog.html -d dist --htmlmin -o dist/Blog.html",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin gallery.html -d dist --htmlmin -o dist/gallery.html && usemin Products.html -d dist --htmlmin -o dist/Products.html && usemin BikesForKids.html -d dist --htmlmin -o dist/BikesForKids.html && usemin StuntBikes.html -d dist --htmlmin -o dist/StuntBikes.html && usemin MountainBikes.html -d dist --htmlmin -o dist/MountainBikes.html && usemin EBikes.html -d dist --htmlmin -o dist/EBikes.html && usemin About.html -d dist --htmlmin -o dist/About.html && usemin Contactus.html -d dist --htmlmin -o dist/Contactus.html  && usemin Blog.html -d dist --htmlmin -o dist/Blog.html ",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
   "author": "Aviv Sharon",
@@ -26,6 +26,7 @@
   "dependencies": {
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
+    "npm-run-all": "^4.1.5",
     "popper.js": "^1.16.1",
     "tether": "^1.4.7"
   }
