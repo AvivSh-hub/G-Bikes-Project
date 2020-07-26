@@ -1,7 +1,7 @@
 {
-  "name": "G-Bikes",
+  "name": "gbikes",
   "version": "1.0.0",
-  "description": "This is a website for Le Chocolat",
+  "description": "This is a website for covid19",
   "main": "index.html",
   "scripts": {
     "start": "npm run lite",
@@ -9,11 +9,11 @@
     "lite": "lite-server",
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-    "imagemin": "imagemin images/* -o dist/images",
-    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin menu.html -d dist --htmlmin -o dist/menu.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "imagemin": "imagemin assets/* -o dist/assets",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin gallery.html -d dist --htmlmin -o dist/gallery.html && usemin Products.html -d dist --htmlmin -o dist/Products.html && usemin BikesForKids.html -d dist --htmlmin -o dist/BikesForKids.html && usemin StuntBikes.html -d dist --htmlmin -o dist/StuntBikes.html && usemin MountainBikes.html -d dist --htmlmin -o dist/MountainBikes.html && usemin EBikes.html -d dist --htmlmin -o dist/EBikes.html && usemin About.html -d dist --htmlmin -o dist/About.html && usemin Contactus.html -d dist --htmlmin -o dist/Contactus.html && usemin Blog.html -d dist --htmlmin -o dist/Blog.html",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
-  "author": "",
+  "author": "Aviv Sharon",
   "license": "ISC",
   "devDependencies": {
     "cssmin": "^0.4.3",
@@ -25,7 +25,6 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
-    "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "tether": "^1.4.7"
